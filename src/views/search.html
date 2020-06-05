@@ -20,44 +20,34 @@
 
 
         <main>
-            <h4>
-                <strong>3 Pontos </strong> encontrados
+
+        {% if total >0 %}
+
+         <h4>
+                <strong>{{total}} Pontos </strong> encontrados
             </h4>
 
             <div class="cards">
-                <div class="card">
-                    <img src="/asserts/eletronicos.svg" alt="Coletoria">
-                    <h1>Coletoria</h1>
-                    <h3>Resíduos Eletrônicos, Lâmpadas</h3>
-                    <p>Rio do Sul, Santa Catarina <br>
-                        Guilherme Gembala, Jardim America
-                        <br>
-                        Número 260
-                    </p>
-                </div>
 
+                {% for place in places %}
                 <div class="card">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTmbC0fetTvBquwe8hoaBl5-8ARysR6Kv2ndp7jX1QTMpsuoHsG&usqp=CAU" alt="Papersider">
-                    <h1>Papersider</h1>
-                    <h3>Resíduos Eletrônicos, Lâmpadas</h3>
-                    <p>Rio do Sul, Santa Catarina <br>
-                        Guilherme Gembala, Jardim America
+                    <img src="{{place.image}}" alt="{{ place.name }}">
+                    <h1>{{ place.name}}</h1>
+                    <h3>{{place.items}}</h3>
+                    <p>{{place.city}}, {{place.state}} <br>
+                        {{place.adress}}
                         <br>
-                        Número 260
+                        {{place.adress2}}
                     </p>
                 </div>
+                {% endfor %}
 
-                <div class="card">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTmbC0fetTvBquwe8hoaBl5-8ARysR6Kv2ndp7jX1QTMpsuoHsG&usqp=CAU" alt="Papersider">
-                    <h1>Papersider</h1>
-                    <h3>Resíduos Eletrônicos, Lâmpadas</h3>
-                    <p>Rio do Sul, Santa Catarina <br>
-                        Guilherme Gembala, Jardim America
-                        <br>
-                        Número 260
-                    </p>
-                </div>
-            </div>
+            </div> 
+
+         {%else%}
+             <h4><strong>Nenhum</strong> local encontrados</h4>
+        {% endif %}
+                
 
         </main>
 {% endblock content %}

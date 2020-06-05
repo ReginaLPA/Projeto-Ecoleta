@@ -25,3 +25,7 @@ h1, h2, h3, h4, h5, h6{
     font-family: Ubuntu,sans-serif;
     color:var(--title-color);
 }
+footer#rodape p{
+    text-align: center;/*Alinhamento do rodapé*/
+    font: bold;
+}

@@ -1,5 +1,5 @@
 # Projeto-Ecoleta
-Páginas HTML criadas com template engine node js.
+
 
 
 ![Next Level Week by](https://github.com/ReginaLPA/Projeto-Ecoleta/blob/master/public/asserts/rocketseat.svg)

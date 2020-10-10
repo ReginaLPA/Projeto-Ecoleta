@@ -2,9 +2,11 @@
 
 
 
-![Next Level Week by](https://github.com/ReginaLPA/Projeto-Ecoleta/blob/master/public/asserts/rocketseat.svg)
 
-![Primeira página](https://github.com/ReginaLPA/Projeto-Ecoleta/blob/master/public/asserts/imgEcoleta.PNG)
+
+<a href ="(https://github.com/ReginaLPA/Projeto-Ecoleta/blob/master/public/asserts/rocketseat.svg)">
+   <img src="(https://github.com/ReginaLPA/Projeto-Ecoleta/blob/master/public/asserts/imgEcoleta.PNG)'>
+   <a/>
 
 ### ![check](https://github.com/ReginaLPA/Projeto-Ecoleta/blob/master/public/asserts/check.svg)Técnologias utilizadas                                      
 
